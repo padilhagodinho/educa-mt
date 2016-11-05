@@ -5,8 +5,15 @@ h2 {
 .demo-card {
   width: 100%;
   max-width: 500px;
-  margin: 0 auto 3px;
+  margin: 0 auto 10px;
 }
+
+.bordered div {
+  border-top: 10px solid orange;
+  background: transparent;
+}
+
+
 h4.title {
   text-align: center;
 }

@@ -2,22 +2,14 @@
   <ion-content padding="true" class="has-header">
     <ion-list id="alunos-list4">
 
-      <ion-item class="item-remove-animate item-avatar item-icon-right" style="background-color: #C2A5A5 !important" ng-repeat="detail in details" type="item-text-wrap" ng-controller="ChatsCtrl"  ng-click="openShareModel(detail)">
-        <img ng-src="{{profilepic.profileimageurl}}">
+    <div class="list card">
+      <div class="item item-avatar">
+        <img src="https://cdn3.iconfinder.com/data/icons/rcons-simple-user/30/user_profile_avatar_account_person-128.png">
+        <h2>Marty McFly</h2>
+        <p>November 05, 1955</p>
+      </div>
+    </div>
 
-        <h2>{{detail.date | date :'fullDate'}}</h2>
-        <h2>{{detail.title}}</h2>
-        <p>{{detail.description}}</p>
-        <i class="icon ion-chevron-right icon-accessory"></i>
-
-        <ion-option-button class="button-assertive" ng-controller="ChatsCtrl" ng-click="remove(detail.id)">
-          Delete
-        </ion-option-button>
-      </ion-item>
-
-      <ion-item id="alunos-list-item10">Item 1</ion-item>
-      <ion-item id="alunos-list-item11">Item 2</ion-item>
-      <ion-item id="alunos-list-item12">Item 3</ion-item>
     </ion-list>
   </ion-content>
 </ion-view>
